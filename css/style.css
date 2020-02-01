@@ -297,10 +297,10 @@ background-position:50% 50%;
 border-radius: 50%;
 }
 
-.d1{background-image: url(../img/vk-icon.png);}
+.d1{background-image: url(../img/vk-icon.svg);}
 
-.d2{background-image: url(../img/fb-icon.png);} 
-.d3{background-image: url(../img/insta-icon.png);} 
+.d2{background-image: url(../img/fb-icon.svg);} 
+.d3{background-image: url(../img/insta-icon.svg);} 
 
 .sd{margin-left: 140px;margin-right: 900px;
 padding: 0;}
