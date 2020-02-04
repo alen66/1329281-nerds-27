@@ -3,44 +3,107 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог товара</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="index.html"> <img src="img/nerds-logo.svg" alt="Лого"> </a>
-			<ul>
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="catalog.html"></a>Магазин</li>
-				<li><a href="#">Контакты</a></li>
+	<header class="header">
+		<nav class="nav-header">
+			<a class="a-header" href="index.html"> <img src="img/nerds-logo.svg" alt="Лого"> </a>
+			<ul class="navbar">
+				<li ><a href="#">Студия</a></li>
+				<li ><a href="#">Клиенты</a></li>
+				<li ><a href="catalog.html">Магазин</a></li>
+				<li ><a href="#">Контакты</a></li>
 			</ul>
-			<ul>
 
-				<li><a href="#">Корзина</a></li>
+			<ul class="navkorz">
+				<li ><a  href="#">Корзина</a></li>
 			</ul>
 		</nav>
 	</header>	
 	<main>
-   <h1>Магазин готовых шаблонов</h1>
-   <section>
-    <h2>Фильтр товаров</h2>
-    <!-- Здесь будет форма -->
+	
+	
+	
+   <h1 class='h1catalog'>Магазин готовых шаблонов</h1>
+   
+   <div class="katalog">
+   <section class='stoim'>
+<div class="filtr">
+    <h2 class="visibility-hidden">Стоимость создания сайта</h2>
+	
+	
+	<form >
+  <fieldset>
+  <legend>Стоимость</legend>
+	
+   <p><input type="range" min="0" max="15000"></p>
+   <p>от</p><input type="text" value='0' id='di1'>
+   <p> до </p><input type="text" value="15000" id='di2'>
+
+   </fieldset>
+	
+   <fieldset>
+  <legend><h3>Сетка</h3></legend>
+	
+    <input type="radio" name='setka' id='setka1' checked/>
+	<label for="setka1">Адаптивная<br><br></label>
+	<input type="radio" name='setka' id='setka2' />
+	<label for="setka2">Фиксированная<br><br></label>
+	<input type="radio" name='setka' id='setka3' />
+	<label for="setka3">Резиновая<br></label>
+	</fieldset>
+	
+	<fieldset>
+  <legend><h3>Особенности</h3></legend>
+	
+	<input type="checkbox" name='che' id='che1' checked>
+	<label for="che1">Слайдер<br><br></label>
+	<input type="checkbox" name='che' id='che2' >
+	<label for="che2">Блок преимущества<br><br></label>
+	<input type="checkbox" name='che' id='che3' >
+	<label for="che3">Новости<br><br></label>
+	<input type="checkbox" name='che' id='che4' >
+	<label for="che4">Галерея<br><br></label>
+	<input type="checkbox" name='che' id='che5' >
+	<label for="che5">Корзина<br><br></label>
+	<input type="submit" name='che' id='che6' value='Показать'>
+	</fieldset>
+  
+	</form>
+
+	</div>
   </section>
 
-  <section>
-  	<h2>Сортировка</h2>
-  	
-  	СОРТИРОВАТЬ:
-  	
-   <!--здесь будет форма -->
- </section>
 
- <section>
-   <h2>Каталог</h2>
-   <ul>
+  <section class="sortkatalog">
 
-    <li>   
-     <img src="img/img-sedona.jpg"  alt="Сайт Седона"> 
+<div class="katalog-header">
+  	<h2 >Сортировать:</h2>
+  
+
+  <ul>
+    <li class="sort-li"><a href="">по цене</a></li>
+    <li class="sort-li"><a href="">по типу</a></li>
+    <li class="sort-li"><a href="">по названию</a></li>
+  </ul>
+    <ul>
+    <li class="sort-li-up"><a href="">Вверх</a></li>
+    <li class="sort-li-down"><a href="">Вниз</a></li>
+    
+  </ul>
+  </div>
+
+	   <div class="wrapper">  
+
+
+
+	
+
+
+    <div class="item" style="--tip: 1; --cost: 10000; --title: sedona">
+  
+     <img src="img/img-sedona.jpg"  alt="Сайт Седона">
      <h3>
       <a href="#">
        SEDONA </a>
@@ -50,9 +113,9 @@
       для туристов</p>
 
       <a href="#">  9 900 РУБ.  </a>
-    </li>
+    </div>
 
-    <li>    
+    <div class="item" style="--tip: 5; --cost: 25000; --title: pink"> 
       <img src="img/img-pink.jpg"  alt="Сайт Pink">
       <h3>
         <a href="#">
@@ -63,10 +126,10 @@
       <p>  Продуктовый лендинг<br>
         приложения IOS и Аndroid</p>
         <a href="#">  9 900 РУБ.  </a>
-    </li>
+    </div>
 
 
-      <li>  
+     <div class="item" style="--tip: 2; --cost: 12000; --title: barbershop"> 
         <img src="img/img-barbershop.jpg"  alt="Сайт BARBERSHOP">  
 
         <h3>
@@ -78,9 +141,9 @@
         <p>Сайт салона красоты.<br>
           Для мужчин, да.</p>
           <a href="#">  9 900 РУБ.  </a>
-        </li>
+       </div>
 
-        <li>
+       <div class="item" style="--tip: 1; --cost: 5000; --title: mishka">
           <img src="img/img-mishka.jpg"  alt="Сайт MISHKA">    
           <h3>
             <a href="#">
@@ -90,20 +153,21 @@
           <p>Интернет-магазин<br>
             вязаных игрушек</p>
             <a href="#">  9 900 РУБ.  </a>
-          </li>
+        </div>
 
-          <li>    
-            <h3>
+          <div class="item" style="--tip: 6; --cost: 40000; --title: a plus">  
+            
               <img src="img/img-aplus.jpg"  alt="Сайт PLUS">
+              <h3>
               <a href="#">
-                A PLUS
+                 a plus
               </a></h3>
               <p>Лендинг курсов повышения<br>
                 квалификации</p>
                 <a href="#">  9 900 РУБ.  </a>
-              </li>
+            </div>
 
-              <li>
+              <div class="item" style="--tip: 3; --cost: 30000; --title: kvast">
                <img src="img/img-kvast.jpg"  alt="Сайт КВАСТ">    
                <h3>
                 <a href="#">
@@ -113,11 +177,12 @@
               <p>Промо-сайт производителя<br>
                 крафтового пива</p>
                 <a href="#">  9 900 РУБ.  </a>
-              </li>
+             </div>
+        </div>
+      </div> 
 
-            </ul>
           </section>
-
+</div>
           <section>
             <h2>переход по страницам</h2>
             <ul>
@@ -131,30 +196,54 @@
 
 
         </main>
-        <footer>
-          <section>
-           <h2>Контакты студии</h2>
-           <p>NERDS DISIGN STUDIO</p>
-           <p>186186 Санкт-Петербург<br>
-            ул. Б. Конюшенная д.19/8</p>
-            <p>тел. +7 (812)275-75-75</p>
-            <button type="button">НАПИШИТЕ НАМ</button>
-          </section>	
+       <footer>
+                
 
-          <section>
-           <h2>Социальные контакты</h2>
-           <div>
-            <ul>
-             <li><a href="#">Вконтакте</a></li>
-             <li><a href="#">Фейсбук</a></li>
-             <li><a href="#">Инстаграм</a></li>
-           </ul>
-           <div>
-             <p>Давайте дружить!</p>
-             <p>Скидка 10% для друзей из социальных сетей</p>
-           </div>
-         </div>	
-       </section>
-     </footer>
+                <section class="contact">
+  
+<img src="img/Прямоугольник 1.png" class="map" alt="Карта"> 
+    <div class="cont">
+                  <h2>Контакты студии</h2>
+                  <p>NERDS DISIGN STUDIO</p>
+                  <p>186186 Санкт-Петербург<br>
+                    ул. Б. Конюшенная д.19/8</p>
+                    <p>тел. +7 (812)275-75-75</p>
+                    <button type="button">НАПИШИТЕ НАМ</button>
+    </div>
+<img src="img/map-marker.png" class="map-mark" alt="">
+
+                </section>  
+                <section class="seti">
+                    <h2 class="visibility-hidden">Социальные контакты</h2>
+
+                    <ul class="sd">
+                      <li  ><a class="d1" href="#" alt=''></a></li>
+                      <li  "><a class="d2 href="#" alt=""></a></li>
+                      <li   ><a class="d3" href="#" alt=""></a></li>
+                    </ul>
+                    <div class="div-seti">
+                      <p class="psd" >Давайте дружить, это выгодно!</p>
+                      <p>Скидка 10% для друзей из социальных сетей</p>
+                    </div>
+                </section>
+              </footer>
+<section class="write">
+              <h2>Напишите нам</h2>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="user">Ваше имя</label>
+                  <input type="text" name="user" placeholder="Имя Фамилия" id="user">
+
+                  <label for="mail">Ваш e-mail </label>
+                  <input type="email" name="mail" placeholder="email@example.com" id="mail">
+
+
+                  <label  >Текст письма:
+                  <textarea placeholder="В свободной форме"></textarea>
+                  </label>
+              <button type="submit" class="btn btn254" value="Отправить">Отправить</button>
+                </form>
+              </section>
+
+              
    </body>
    </html>
