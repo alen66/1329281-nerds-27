@@ -418,7 +418,6 @@ padding-top: 35px;
   position: absolute;
   width: inherit;
   z-index: 0;
-  
 }
 #slide1:checked ~ .slider > .slide1,
 #slide2:checked ~ .slider > .slide2,
@@ -462,7 +461,6 @@ padding-top: 35px;
   top:165px; 
   left: 775px;
 }
-
 .section-social{
   display: flex; 
   align-items: center;
