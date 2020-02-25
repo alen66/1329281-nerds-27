@@ -411,7 +411,6 @@ a.btn{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  
   -webkit-padding-start: 0px;
   
           padding-inline-start: 0px;
