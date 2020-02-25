@@ -6,7 +6,14 @@ var mail = popup.querySelector("[name=mail]");
 var form = popup.querySelector("form");
   var isStorageSupport = true;
   var storage = "";
-  
+
+
+
+
+
+
+
+
   try {
     storage = localStorage.getItem("user");
   } catch (err) {
@@ -48,6 +55,15 @@ link.addEventListener("click", function (evt) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
+      }
+    }
+  });
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (pop.classList.contains("activ-show")) {
+        pop.classList.remove("activ-show");
       }
     }
   });
