@@ -481,7 +481,7 @@ a.btn{
 }
 .project li:active,
 .section-project a:active {
-  opacity: 0.25;
+  opacity: 0.35;
 } 
 .main-slider{
   background-color: #eeeeee;
