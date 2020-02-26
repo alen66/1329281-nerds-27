@@ -1175,7 +1175,7 @@ background-image: url(../img/insta-icon.svg);
   color: #283136;
 }
 
-#range1,#range2 {
+.range-style input{
   display: block;
   position: absolute;
   width: 14px;
@@ -1190,11 +1190,11 @@ background-image: url(../img/insta-icon.svg);
    
   cursor: pointer;
 }
-#range1{
+.range-style input:nth-of-type(1){
   top: 30px;
   left: 18px;
 }
-#range2{
+.range-style input:nth-of-type(2){
   top: 30px;
   left: 159px;
 }
