@@ -4,29 +4,30 @@
    <meta charset="UTF-8">
    <title>Каталог товара</title>
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <!--  <link rel="stylesheet" href="css/style.css"> -->
+   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/minimize.css">
  </head>
  <body>
    <header >
-     <nav class="nav upper type-medium">
-       <a href="index.html" title="На главную страницу" > <img class="logo" src="img/nerds-logo.svg" width='160' height="65" alt="Логотип студии Нёрдс">
-       </a>
-       <div class="header-nav">
-        <ul >     
-          <li ><a href="#" aria-label="На страницу студия" >Студия</a></li>
-          <li ><a href="#" aria-label="На страницу клиенты">Клиенты</a></li>
-          <li class="active" ><a  href="#" aria-label="Текущая страница">Магазин</a></li>
-          <li ><a href="#" aria-label="На страницу контакты" >Контакты</a></li>
-        </ul>
-      </div>
-      <div >
-        <ul class="nav-cart">
-          <li ><a  href="#" aria-label="На страницу покупок" >Корзина</a></li>
-        </ul>
-      </div>
-    </nav>
+     <div class="for-ie">
+       <nav class="nav upper type-medium">
+         <a href="index.html" title="На главную страницу" > <img class="logo" src="img/nerds-logo.svg" width='160' height="65" alt="Логотип студии Нёрдс">
+         </a>
+         <div class="header-nav">
+          <ul >     
+            <li ><a href="#" aria-label="На страницу студия" >Студия</a></li>
+            <li ><a href="#" aria-label="На страницу клиенты">Клиенты</a></li>
+            <li class="active" ><a  href="#" aria-label="Текущая страница">Магазин</a></li>
+            <li ><a href="#" aria-label="На страницу контакты" >Контакты</a></li>
+          </ul>
+        </div>
+        <div >
+          <ul class="nav-cart">
+            <li ><a  href="#" aria-label="На страницу покупок" >Корзина</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header> 
   <main>
    <h1 class="catalog-h1 type-medium">Магазин готовых шаблонов</h1>
@@ -61,7 +62,7 @@
           <input type="checkbox" name='che' id='che1' checked>
           <label for="che1">Слайдер</label>
           <input type="checkbox" name='che' id='che2' >
-          <label for="che2">Блок преимущества</label>
+          <label for="che2">Блок преимуществ</label>
           <input type="checkbox" name='che' id='che3' >
           <label for="che3">Новости</label>
           <input type="checkbox" name='che' id='che4' >
@@ -170,17 +171,21 @@
 <footer>
   <section class="map-catalog">
     <div class="map-container">
-     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e9a7cc974f137b6182f8d0ef8271dee35650666cb2e6c9179b720fbcc3f106a&amp;source=constructor" width="1440" height="416" ></iframe>
-     <img  class="map-contact" src="img/map.png"  alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">  
-     <div class="contact">
-      <h2 class="visibility-hidden">Контакты студии</h2>
-      <p class='type-bold upper'>nёrds disign studio</p>
-      <p>186186 Санкт-Петербург,<br>
-        ул. Б. Конюшенная д.19/8</p>
-        <a href="tel:+78122757575" class="phone" title="Позвоните нам" >тел. +7 (812)275-75-75</a>
-        <a  class="btn write-link" href="#letter">напишите нам</a>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad2f64389659a41b95980fa34efb19a8e506bba5bb5ca2a148c8ebd4a00c5c0c0&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+
+      <div class="position">
+        <img  class="map-contact" src="img/map.png"  alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">  
+
+        <div class="contact">
+          <h2 class="visibility-hidden">Контакты студии</h2>
+          <p class='type-bold upper'>nёrds disign studio</p>
+          <p>186186 Санкт-Петербург,</p>
+          <p> ул. Б. Конюшенная д.19/8</p>
+          <a href="tel:+78122757575" class="phone">тел. +7 (812)275-75-75</a>
+          <a  class="btn write-link" href="#letter">напишите нам</a>
+        </div>
+        <img class="marker" src="img/map-marker.png" width="231" height="190" alt="">
       </div>
-      <img class="marker" src="img/map-marker.png"  alt="" width="231" height="190">
     </div>
   </section>  
   <section class="section-social" >
@@ -223,6 +228,6 @@
     </div>
   </form>
 </section>
-<script src="./js/script.js" ></script>
+<script src="./js/min-script.js" ></script>
 </body>
 </html>
