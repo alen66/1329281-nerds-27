@@ -657,6 +657,8 @@ a.btn{
 .map-container iframe{
    margin-top: 80px;
   position:absolute;
+  width: 100%;
+  min-height: 416px;
   z-index: 2;
   border: none;
   display: flex;
